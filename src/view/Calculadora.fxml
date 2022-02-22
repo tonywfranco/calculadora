@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="569.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalculadoraController">
+   <children>
+      <VBox layoutX="30.0" layoutY="203.0" prefHeight="345.0" prefWidth="91.0">
+         <children>
+            <Button fx:id="btClear" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="C">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btUm" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="1">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btQuatro" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="4">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btSete" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="7">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btZero" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="0">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="126.0" layoutY="203.0" prefHeight="345.0" prefWidth="91.0">
+         <children>
+            <Button fx:id="btMemoTotal" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="MRC">
+               <font>
+                  <Font name="Verdana" size="23.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btDois" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="2">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btCinco" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="5">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btOito" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="8">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btZero2" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="00">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="222.0" layoutY="203.0" prefHeight="345.0" prefWidth="91.0">
+         <children>
+            <Button fx:id="btMemoMenos" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="M-">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btTres" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="3">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btSeis" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="6">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btNove" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="9">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btPonto" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text=".">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <TextField fx:id="txVisor" alignment="CENTER_RIGHT" editable="false" layoutX="10.0" layoutY="47.0" prefHeight="78.0" prefWidth="528.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextField>
+      <VBox layoutX="333.0" layoutY="203.0">
+         <children>
+            <Button fx:id="btMemoMais" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="M+">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btPercentual" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="\%">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btMult" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="X">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btSoma" mnemonicParsing="false" prefHeight="133.0" prefWidth="90.0" text="+">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox layoutX="429.0" layoutY="203.0">
+         <children>
+            <Button fx:id="btRaizQuad" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="√">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btPotencia" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="^">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btDivisao" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="÷">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="4.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btSubtracao" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="-">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btResult" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="=">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <HBox layoutX="363.0" layoutY="147.0" prefHeight="35.0" prefWidth="138.0">
+         <children>
+            <Button fx:id="btApagar" alignment="CENTER" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" text="→">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="7.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btInverte" mnemonicParsing="false" prefHeight="32.0" prefWidth="60.0" text="+/-">
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="7.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </HBox>
+      <Text fx:id="txAviso" layoutX="207.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="265.6708984375" />
+      <Text fx:id="txMemoTotal" layoutX="194.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="290.0" />
+      <Text fx:id="txM" layoutX="166.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="12.0">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="11.0" layoutY="28.0" opacity="0.53" strokeType="OUTSIDE" strokeWidth="0.0" text="FRANCO®">
+         <font>
+            <Font name="Eras Demi ITC" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="40.0" layoutY="176.0" opacity="0.53" strokeType="OUTSIDE" strokeWidth="0.0" text="dígitos">
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="55.0" layoutY="160.0" opacity="0.53" strokeType="OUTSIDE" strokeWidth="0.0" text="15">
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="txHelp" layoutX="502.0" layoutY="26.0" opacity="0.53" strokeType="OUTSIDE" strokeWidth="0.0" text="help">
+         <font>
+            <Font name="Calibri Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="501.0" layoutY="35.0" opacity="0.53" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font name="Calibri Italic" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
